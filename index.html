@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class ="app-container">
+        <div class="header">
+            <div class="app-icon">
+                <img src="/Project/moneybag.png" alt="" width="60px" height="60px">
+            </div>
+            <h1>Modern Bank App</h1>
+            <p>Manage your finances with ease</p>
+        </div>
+        <hr class="separator">
+
+        <div class="transcation-section">
+            <label for="deposit-amount">DEPOSIT AMOUNT</label>
+            <input type="number" id="deposit-amount" placeholder="Enter amount to deposit">
+            <button class="deposit-btn" id="deposit-btn" onclick="deposit()">DEPOSIT</button>
+        </div>
+
+        <div class="transaction-section">
+            <label for="withdraw-amount">WITHDRAW AMOUNT</label>
+            <input type="number" id="withdraw-amount" placeholder="Enter amount to withdraw">
+            <button class="withdraw-btn" id="Withdraw-btn" onclick="withdraw()">WITHDRAW</button>
+        </div>
+        <hr class="separator">
+
+        <div class="balance-section">
+            <p class="balance-label">CURRENT BALANCE</p>
+            <p class="balance-amount" id="current-balance-display">0</p>
+        </div>
+    </div>
+</body>
+<script src="/Project/index.js"></script>
+</html>
